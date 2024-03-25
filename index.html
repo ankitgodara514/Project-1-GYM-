@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit's Gym</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<style>
+    body{
+        color: aliceblue;
+        font-family: cursive;
+        background: url(training-828741_640.jpg);
+        background-repeat: no-repeat;
+        height: 1784px;
+        background-size: 2166px 1800px;
+    }
+
+    .left{
+        /* border: 2px solid red; */
+        margin: 12px 23px;
+        display: inline-block;
+        width: 112px;
+        height: 120px;
+    }
+
+    .center{
+        position: absolute;
+        left: 575px;
+        margin: 12px auto;
+        width: 700px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .right{
+        position: absolute;
+        right: 0px;
+        top: 2px;
+        margin: 31px 66px;  
+        /* border: 2px solid red; */
+    }
+
+    img{
+        position: absolute;
+        height: 90px;
+        top: 3px;
+    }
+    .logo h4{
+        position: absolute;
+        line-height: 0px;
+        top: 67px;
+        width: 97px;
+    }
+
+    .navbar li{
+        display: inline-block;
+        list-style: none;
+        padding: 8px 26px;
+        margin-top: 4px;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: aliceblue;
+        font-family: cursive;
+        text-decoration: none;
+    }
+    .navbar li a:hover{
+        color: rgb(255, 224, 183);
+        font-size: 21px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    button{
+        font-family: cursive;
+        font-size: 20px;
+        background-color: #fdcac6;
+        height: 36px;
+        width: 150px;
+        border-radius: 12px;
+    }
+    .location:hover{
+        background-color: #ffffff;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .container{
+        border: 4px solid rgb(240, 212, 212);
+        border-radius: 15px;
+        width: 515px;
+        margin: 84px 180px;
+    }
+    .container h2{
+        text-align: center;
+        font-size: 39px;
+    }
+    .form{
+        font-family: cursive;
+        width: 225px;
+        margin: 7px auto;
+        padding: 7px 48px;
+        margin-right: 151px;  
+    }
+    .form input{
+        font-size: 20px;
+        text-align: center;
+        font-family: cursive;
+        padding: 9px 25px;
+        border-radius: 14px;  
+    }
+    .container #gender{
+        font-size: 20px;
+        text-align: right;
+        margin: 16px 87px;
+    }
+
+    .container #submit{
+        width: 120px;
+    }
+    #submit input{
+        padding-left: 102px;
+        padding-right: 111px;
+        position: relative;
+        right: 68px;
+    }
+    .form input:hover{
+        background-color: #cdcefb;
+    }
+</style>
+<body>
+    <header class="top">
+        <div class="left"> 
+            <div class="logo">
+                <img src="gym-1048852_1280.webp" alt="">
+                <h4>Sterlin GYM</h4>
+            </div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li class="home"><a href="#"> Home</a></li>
+                <li class="About"><a href="#"> About</a></li>
+                <li class="Fitness Calculator"><a href="#"> Fitness Calculator</a></li>
+                <li class="Contact"><a href=""> Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="location">Locations</button>
+        </div>
+    </header>    
+        <div class="container">
+            <h2>Join the Best Gym of India</h2>
+            <form action="noaction.php" target="_blank">
+
+                <div class="form" id="name">
+                    <input type="text" name="Name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form" id="age">
+                    <input type="number" name="Age" placeholder="Your Age"> 
+                </div>
+
+                <div class="form" id="gender">
+                    Male <input type="radio" class="male" name="gender" >
+                    Female <input type="radio" name="gender" >
+                </div>
+
+                <div class="form" id="contact">
+                    <input type="number" name="contact" placeholder="Your Contact Number">
+                </div>
+                <div class="form" id="submit">
+                    <input type="submit" value="Submit" >
+                </div>
+            </form>
+        </div>
+</body>
+</html>
